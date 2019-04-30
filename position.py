@@ -30,31 +30,14 @@ def tMax(v0):
     
     return 2*v0/9.81
 
+
 def unif(n,T):
 
     """
     returns array of uniformly spaced points in time
     """
     
-    unif_spaced = []
-
-    i= 0
-
-    while i in range(0, n + 1):
-        unif_spaced.append(i*T/n)
-        i += 1
-
-    return np.array(unif_spaced)
-
-"""
-Maybe better to use following for statement.  Used while loop for purposes
-of assignment.
-
-    for i in range(0, n+1):
-        unif_spaced.append(i*T/n)
-
-    return np.array(unif_spaced)
-"""
+    return np.array(list(map(lambda i: i * T / n, range(n + 1))))
 
 ##################################
 
