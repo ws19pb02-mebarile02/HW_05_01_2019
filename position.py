@@ -59,17 +59,14 @@ y_vals = height(h0,v0,t_vals)
 Generating table of values
 """
 
-i = 0
+print(' time | height')
+print('---------------')
 
+i = 0
 while i < len(t_vals):
-    if i == 0:
-        print(' time | height')
-        print('---------------')
-        print(f" {round(t_vals[i],2):.2f} | {round(y_vals[i],2):.2f}")
-        i += 1
-    else:
-        print(f" {round(t_vals[i],2):.2f} | {round(y_vals[i],2):.2f}")
-        i += 1
+    print(f" {round(t_vals[i],2):.2f} | {round(y_vals[i],2):.2f}")
+    i += 1
+        
         
 ##################################
 
